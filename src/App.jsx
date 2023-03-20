@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import {
   RiAddLine,
+  RiArrowDownSLine,
   RiCloseLine,
   RiMenu3Fill,
   RiPieChartLine,
@@ -37,8 +38,8 @@ function App() {
         </button>
       </nav>
 
-      <main className='lg:pl-28 grid grid-cols-1 lg:grid-cols-8 p-4'>
-        <div className='lg:col-span-6'>
+      <main className='lg:pl-28 grid grid-cols-1 lg:grid-cols-8 p-4 pb-20'>
+        <div className='lg:col-span-6 md:p-4'>
           {/* Header */}
           <header>
             {/* Title and search */}
@@ -79,6 +80,76 @@ function App() {
               </a>
             </nav>
           </header>
+          {/* Title content */}
+          <div className='flex items-center justify-between mb-16'>
+            <h2 className='text-xl text-gray-300'>Choose Dishes</h2>
+            <button className='flex items-center gap-4 text-gray-300 bg-[#1F1D2B] px-4 py-2 rounded-lg'>
+              <RiArrowDownSLine /> Dine in
+            </button>
+          </div>
+          {/* Content */}
+          <div className='p-2 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3'>
+            {/* Card */}
+            <div className='bg-[#1F1D2B] p-8 rounded-xl flex flex-col items-center gap-2 text-gray-300 text-center'>
+              <img
+                src='../public/comida_01.png'
+                className='w-28 h-28 object-cover -mt-16  shadow-2xl rounded-full'
+              />
+              <p className='text-[18px]'>Speacy seasoned seafood nodles</p>
+              <span className='text-gray-400'>$ 2.29</span>
+              <p className='text-gray-600'>20 Bowls available</p>
+            </div>
+            {/* Card */}
+            <div className='bg-[#1F1D2B] p-8 rounded-xl flex flex-col items-center gap-2 text-gray-300 text-center'>
+              <img
+                src='../public/comida_01.png'
+                className='w-28 h-28 object-cover -mt-16  shadow-2xl rounded-full'
+              />
+              <p className='text-[18px]'>Speacy seasoned seafood nodles</p>
+              <span className='text-gray-400'>$ 2.29</span>
+              <p className='text-gray-600'>20 Bowls available</p>
+            </div>
+            {/* Card */}
+            <div className='bg-[#1F1D2B] p-8 rounded-xl flex flex-col items-center gap-2 text-gray-300 text-center'>
+              <img
+                src='../public/comida_01.png'
+                className='w-28 h-28 object-cover -mt-16  shadow-2xl rounded-full'
+              />
+              <p className='text-[18px]'>Speacy seasoned seafood nodles</p>
+              <span className='text-gray-400'>$ 2.29</span>
+              <p className='text-gray-600'>20 Bowls available</p>
+            </div>
+            {/* Card */}
+            <div className='bg-[#1F1D2B] p-8 rounded-xl flex flex-col items-center gap-2 text-gray-300 text-center'>
+              <img
+                src='../public/comida_01.png'
+                className='w-28 h-28 object-cover -mt-16  shadow-2xl rounded-full'
+              />
+              <p className='text-[18px]'>Speacy seasoned seafood nodles</p>
+              <span className='text-gray-400'>$ 2.29</span>
+              <p className='text-gray-600'>20 Bowls available</p>
+            </div>
+            {/* Card */}
+            <div className='bg-[#1F1D2B] p-8 rounded-xl flex flex-col items-center gap-2 text-gray-300 text-center'>
+              <img
+                src='../public/comida_01.png'
+                className='w-28 h-28 object-cover -mt-16  shadow-2xl rounded-full'
+              />
+              <p className='text-[18px]'>Speacy seasoned seafood nodles</p>
+              <span className='text-gray-400'>$ 2.29</span>
+              <p className='text-gray-600'>20 Bowls available</p>
+            </div>
+            {/* Card */}
+            <div className='bg-[#1F1D2B] p-8 rounded-xl flex flex-col items-center gap-2 text-gray-300 text-center'>
+              <img
+                src='../public/comida_01.png'
+                className='w-28 h-28 object-cover -mt-16  shadow-2xl rounded-full'
+              />
+              <p className='text-[18px]'>Speacy seasoned seafood nodles</p>
+              <span className='text-gray-400'>$ 2.29</span>
+              <p className='text-gray-600'>20 Bowls available</p>
+            </div>
+          </div>
         </div>
         <div className='lg:col-span-2 fixed lg:static right-0'>Carrito</div>
       </main>
